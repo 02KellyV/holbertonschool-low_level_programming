@@ -1,15 +1,13 @@
-#!/bin/bash
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
-#include <studio.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
+
 int main(void)
 {
 	int n = 0;
-	RAND_MAX = 100;
+	int RAND = 100;
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	n = rand() - RAND / 2;
 	if(n == 0){
 		printf("is zero %d.\n", n);
 
