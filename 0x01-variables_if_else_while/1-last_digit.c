@@ -1,14 +1,16 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
-* main - taking the last number
-*Return: 0 (success)
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int n = 0;
-	int RAND_MAX = 100;
 	int mod = n % 10;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
