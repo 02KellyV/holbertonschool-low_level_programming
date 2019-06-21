@@ -16,13 +16,15 @@ int main(void)
 		putchar(n);
 		n++;
 	}
+
 	n = 'A';
-	while ( n<= 'Z')
+
+	while (n <= 'Z')
 	{
 		putchar(n);
 		n++;
 	}
+
 	putchar('\n');
 	return (0);
 }
-
