@@ -9,13 +9,12 @@
 
 int main(void)
 {
-	n = 0;
+	int n = 48;
 
-	while (n <= 10){
-		if (n != 'e' && n != 'q'){
-			putchar(n);
-		}
-		n+1;
+	while (n < 58)
+	{
+		putchar(n);
+		n++;
 	}
 	putchar('\n');
 	return (0);
