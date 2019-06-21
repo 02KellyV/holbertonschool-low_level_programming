@@ -1,5 +1,7 @@
 #include <stdio.h>
-/* more headers goes there */ /* betty style doc for function main goes there */ /**
+/* more headers goes there */
+/* betty style doc for function main goes there */
+/**
  * main - Entry point
  *
  * Return: Always 0 (Success)
@@ -21,7 +23,10 @@ int main(void)
 					putchar(' ');
 					putchar(y);
 					putchar(z);
-					if (!(i == 57 && j == 56 && y == 57 && z == 57))
+					if (!(i == 57 &&
+						j == 56 &&
+						y == 57 &&
+						z == 57))
 					{
 						putchar(',');
 						putchar(' ');
