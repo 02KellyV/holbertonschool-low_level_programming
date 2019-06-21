@@ -28,10 +28,10 @@ int main(void)
 					y++;
 				}
 				j++;
+				y = j + 1;
 			}
 			i++;
-			j = i + 1;
-			y = j + 1;
+			j = i;
 		}
 		putchar('\n');
 		return (0);
