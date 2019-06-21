@@ -21,7 +21,7 @@ int main(void)
 					putchar(' ');
 					putchar(y);
 					putchar(z);
-					if (!(i == 57) || !(j == 56) || !(y == 57) || !(z == 57))
+					if (!(i == 57 && j == 56 && y == 57 && z == 57))
 					{
 						putchar(',');
 						putchar(' ');
