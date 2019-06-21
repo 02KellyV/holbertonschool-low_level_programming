@@ -3,18 +3,20 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point.
+* Return: 0 (success).
+*/
 
 int main(void)
 {
-	char letter = 'a';
+	char n = 'a';
 
-	while (letter <= 'z'){
-		putchar(letter++);
+	while (n <= 'z')
+	{
+		putchar(n);
+		n++;
 	}
+
 	putchar('\n');
 	return (0);
 }
