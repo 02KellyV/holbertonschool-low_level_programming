@@ -1,33 +1,28 @@
 #include <stdio.h>
 
 /**
- * fibonacci - Entry point
+ * main - Entry point
  *
- * Return: Always 0 (Success)
+ * purpose - fib even sums
+ *
+ * Return: (0) always
  */
 
-void fibonacci(void)
+int main(void)
 {
-	unsigned long int lim = 4000000;
-	unsigned long int bef = 0;
-	unsigned long int aft = 1;
-	unsigned long int R = 0;
-	unsigned long int sum = 0;
+	int i;
+	unsigned long int j, k = 0, a = 1, sum = 0;
 
-	while (lim > R)
+	for (i = 0; i < 100; i++)
 	{
-
-		R = bef + aft;
-
-		if ((R % 2) == 0)
+		j = k + a;
+		k = a;
+		a = j;
+		if (j % 2 == 0 && sum < 4000000)
 		{
-			sum += R;
+			sum += j;
 		}
-
-		bef = aft;
-		aft = R;
 	}
-
 	printf("%li\n", sum);
-
+	return (0);
 }
