@@ -8,7 +8,6 @@
 
 int main(void)
 {
-
 	int i = 0;
 	int m3 = 3;
 	int m5 = 5;
@@ -24,16 +23,21 @@ int main(void)
 			m3 += 3;
 		}
 
-		if (m5 < lim)
+		if (m5 < lim && (m5 % 3) != 0)
 		{
 			sum += m5;
 			m5 += 5;
 		}
+		else if (m5 % 3 == 0)
+		{
+			m5 += 5;
+		}
 
-		if (lim <= m3 && lim <= m5)
+		if (m3 >= lim && m5 >= lim)
 		{
 			i = 1;
 		}
 	}
-	return (sum);
+        printf("%d\n", sum);
+        return (0);
 }
