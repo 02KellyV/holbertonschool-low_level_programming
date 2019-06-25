@@ -9,7 +9,7 @@
 int main(void)
 {
 
-	int i = 1;
+	int i = 0;
 	int m3 = 3;
 	int m5 = 5;
 	int sum = 0;
@@ -20,13 +20,13 @@ int main(void)
 
 		if (m3 < lim)
 		{
-			R += m3;
+			sum += m3;
 			m3 += 3;
 		}
 
 		if (m5 < lim)
 		{
-			R += m5;
+			sum += m5;
 			m5 += 5;
 		}
 
@@ -35,5 +35,5 @@ int main(void)
 			i = 1;
 		}
 	}
-	return (0);
+	return (sum);
 }

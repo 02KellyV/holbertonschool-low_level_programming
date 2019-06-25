@@ -6,21 +6,11 @@
  * Return: Always 0.
  */
 
-void _islower(int c)
+int _islower (int c)
 {
-	int i;
-
-	if (i < 'z' || i ; i < 10; i++)
+	if (c >= 97 && c <= 122)
 	{
-		char alp = 'a';
-
-		while (alp <= 'z')
-		{
-
-		_putchar (alp);
-		alp++;
-
-		}
-		_putchar ('\n');
+		return (1);
 	}
+	return (0);
 }

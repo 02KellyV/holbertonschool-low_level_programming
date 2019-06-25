@@ -12,4 +12,6 @@ void fibonacci(void);
 
 int _putchar(char c);
 
+int _islower(int c);
+
 void print_times_table(int n);
