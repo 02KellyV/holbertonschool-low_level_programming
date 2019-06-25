@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * fibonacci2 - Entry point
+ * main - fibonacci <3
  *
  * Purpose - no hardcode
  *
@@ -11,47 +11,35 @@
 int main(void)
 {
 	unsigned long int i;
-	unsigned long int j;
-	unsigned long int k;
+	unsigned long int bef = 1;
+	unsigned long int aft = 2;
+	unsigned long int l = 1000000000;
+	unsigned long int bef1 = (bef / l);
+	unsigned long int bef2 = (bef % l);
+	unsigned long int aft1 = (aft / l);
+	unsigned long int aft2 = (aft % l);
 
-	j = 1;
-	k = 2;
-
-	printf("%lu", j);
+	printf("%lu", bef);
 
 	for (i = 1; i < 91; i++)
 	{
-		printf(", %lu", k);
-		k = k + j;
-		j = k - j;
+		printf(", %lu", aft);
+		aft += bef;
+		bef = aft - bef;
 	}
 
-	j1 = j / 1000000000;
-	j2 = j % 1000000000;
-	k1 = k / 1000000000;
-	k2 = k % 1000000000;
+	/* End Normal Fibonacci */
 
 	for (i = 92; i < 99; ++i)
 	{
-		printf(", %lu", k1 + (k2 / 1000000000));
-		printf("%lu", k2 % 1000000000);
-		k1 = k1 + j1;
-		j1 = k1 - j1;
-		k2 = k2 + j2;
-		j2 = k2 - j2;
+		printf(", %lu", aft1 + (aft2 / l));
+		printf("%lu", aft2 % l);
+		aft1 = aft1 + bef1;
+		bef1 = aft1 - bef1;
+		aft2 = aft2 + bef2;
+		bef2 = aft2 - bef2;
 	}
 
 	printf("\n");
-
-	return (0);
-}
-
-	for (i = 0; i < 100; i++)
-	{
-		R = bef + aft;
-		bef = aft;
-		aft = R;
-		printf("fibonacci: %ld \n", R);
-	}
-
+	return(0);
 }
