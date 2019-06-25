@@ -8,12 +8,11 @@
 
 void fibonacci(void)
 {
-
-	long int lim = 4000000;
-	long int aft = 1;
-	long int bef = 0;
-	long int R = 0;
-	long int sum = 0;
+	unsigned long int lim = 4000000;
+	unsigned long int bef = 0;
+	unsigned long int aft = 1;
+	unsigned long int R = 0;
+	unsigned long int sum = 0;
 
 	while (lim > R)
 	{
@@ -27,9 +26,8 @@ void fibonacci(void)
 
 		bef = aft;
 		aft = R;
-
 	}
 
-	printf("%ld\n", sum);
+	printf("%li\n", sum);
 
 }
