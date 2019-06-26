@@ -38,6 +38,6 @@ int main(void)
 			i = 1;
 		}
 	}
-        printf("%d\n", sum);
-        return (0);
+	printf("%d\n", sum);
+	return (0);
 }
