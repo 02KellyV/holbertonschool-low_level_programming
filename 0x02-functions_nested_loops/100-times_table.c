@@ -6,7 +6,7 @@ int _putchar(char c);
  * print_times_table - w-zero
  *
  * @c params
- * 
+ *
  * Return: void
  */
 
@@ -26,9 +26,12 @@ void print_times_table(int n)
 
 				if ((i * j) < 10)
 				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
+					if (j != 0)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+					}
 					_putchar((j * i) + '0');
 				}
 
