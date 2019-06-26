@@ -3,9 +3,7 @@
 int _putchar(char c);
 
 /**
- * times_table - print the times table until n
- *
- * @n: n times table
+ * times_table - print 9 table
  *
  * Return: No return
  */
@@ -26,13 +24,11 @@ void times_table(void)
 				{
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(' ');
 				}
 				_putchar((j * i) + '0');
 			}
 			else if ((i * j) < 100)
 			{
-				_putchar(' ');
 				_putchar(' ');
 				_putchar((((j * i) / 10) % 10) + '0');
 				_putchar(((j * i) % 10) + '0');
