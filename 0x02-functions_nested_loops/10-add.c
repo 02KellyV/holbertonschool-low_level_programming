@@ -1,7 +1,5 @@
 #include "holberton.h"
 
-int _putchar(char c);
-
 /**
  * add - sum
  *
@@ -12,7 +10,9 @@ int _putchar(char c);
 
 int add(int n, int m)
 {
-	int sum = (n + m);
+	int sum;
+
+	sum = (n + m);
 
 	return (sum);
 }
