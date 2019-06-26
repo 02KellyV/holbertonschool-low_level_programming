@@ -3,8 +3,10 @@
 int _putchar(char c);
 
 /**
- * print_times_table - prints the 9 times table starting w/zero
- * @n: number passed from main to specify width of times table
+ * print_times_table - w-zero
+ *
+ * @c params
+ * 
  * Return: void
  */
 
@@ -34,16 +36,16 @@ void print_times_table(int n)
 				{
 					_putchar(' ');
 					_putchar(' ');
-					_putchar((((j * i)/ 10)% 10)+ '0');
-					_putchar(((j * i)% 10)+ '0');
+					_putchar((((j * i) / 10) % 10) + '0');
+					_putchar(((j * i) % 10) + '0');
 				}
 
 				else if ((i * j) < 1000)
 				{
 					_putchar(' ');
-					_putchar((((j * i)/ 100)% 10)+ '0');
-					_putchar((((j * i)/10)% 10)+ '0');
-					_putchar(((j * i)% 10)+ '0');
+					_putchar((((j * i) / 100) % 10) + '0');
+					_putchar((((j * i) / 10) % 10) + '0');
+					_putchar(((j * i) % 10) + '0');
 				}
 			if (j != (n))
 			{
@@ -53,6 +55,7 @@ void print_times_table(int n)
 			}
 
 		_putchar('\n');
+
 		}
 
 	}
