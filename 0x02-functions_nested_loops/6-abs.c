@@ -1,17 +1,18 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * _abs - check the code for Holberton School students.
  *
- * @param ab an integer argument
+ * @n: is an integer argument
  *
  * Return: Always 0.
  */
 
-int _abs(int ab)
+int _abs(int n)
 {
-	printf("%d\n", abs(ab));
-	return (0);
+	if (n >= 0)
+	{
+		return (n);
+	}
+	return (-n);
 }
