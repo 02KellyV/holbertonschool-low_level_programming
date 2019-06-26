@@ -3,11 +3,11 @@
 int _putchar(char c);
 
 /**
- * print_times_table - w-zero
+ * print_times_table - print the times table until n
  *
- * @c params
+ * @n: n times table
  *
- * Return: void
+ * Return: No return
  */
 
 void print_times_table(int n)
