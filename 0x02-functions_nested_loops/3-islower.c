@@ -3,7 +3,7 @@
 /**
  * _islower - check the code for Holberton School students.
  *
- * c:  is a parameter
+ * @c:  is a parameter
  *
  * Return: Always 0.
  */
