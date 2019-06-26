@@ -5,7 +5,7 @@ int _putchar(char c);
 /**
  * print_sign - check the code for Holberton School students.
  *
- * @param c an integer argument
+ * @n: is an integer argument
  *
  * Return: Always 0.
  */
