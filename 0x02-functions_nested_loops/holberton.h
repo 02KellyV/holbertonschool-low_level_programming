@@ -28,4 +28,4 @@ void print_times_table(int n);
 
 void times_table(void);
 
-int add(int n, int n);
+int add(int a, int b);
