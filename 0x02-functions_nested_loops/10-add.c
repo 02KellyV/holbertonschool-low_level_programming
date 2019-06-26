@@ -1,18 +1,19 @@
 #include "holberton.h"
 
 /**
- * add - sum
+ * add - add two integers
  *
- * @n: an integer param
- * @m: another integer param
- * Return: No return
+ * @a: Integers to add
+ * @b: Integer to add
+ * Return: Addition integers
  */
 
-int add(int n, int m)
+int add(int a, int b)
 {
-	int sum;
+	int suma;
 
-	sum = (n + m);
+	suma = a + b;
 
-	return (sum);
+	return (suma);
 }
+
