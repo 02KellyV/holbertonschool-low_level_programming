@@ -1,12 +1,10 @@
 #include "holberton.h"
 
-int _putchar(char c);
-
 /**
  * print_numbers - check the code for Holberton School students.
  *
  *
- * Return: Always 0.
+ * Return: No.
  */
 
 
