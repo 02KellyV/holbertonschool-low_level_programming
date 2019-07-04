@@ -1,32 +1,28 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * rev_string - rev.
- * @s : pointer-parameter
- * Return: ntg.
+ * rev_string - rev string
+ * @s: string
  */
-
 
 void rev_string(char *s)
 {
-	char tmp;
-	int i, l, l1;
+	char *t = s;
+	char n[1000];
+	short c = 0;
 
-	l = 0;
-	l1 = 0;
-
-	while (s[l] != '\0')
+	while (*s != '\0')
 	{
-		l++;
+		n[c] = *s;
+		s++;
+		c++;
 	}
+	c = 0;
 
-	l1 = l - 1;
-
-	for (i = 0; i < (l / 2); i++)
+	while (s > t)
 	{
-		tmp = s[i];
-		s[i] = s[l1];
-		s[l--] = tmp;
+		s--;
+		*s = n[c];
+		c++;
 	}
-
 }
