@@ -1,4 +1,12 @@
-xvoid puts2(char *str)
+#include "holberton.h"
+
+/**
+ * puts2 - prints one char out of 2
+ * @str: type
+ *
+ */
+
+void puts2(char *str)
 {
 	int i, j = 0;
 
