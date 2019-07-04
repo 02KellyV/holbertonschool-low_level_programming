@@ -7,4 +7,7 @@ void print_number(int n);
 
 int _putchar(char c);
 
+void print_buffer(char *b, int size);
+
+
 #endif
