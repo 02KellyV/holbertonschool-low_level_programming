@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * wildcmp - Compar strings
+ * wildcmp - Compare strings
  * @s1: pointer to string params
  * @s2: pointer to string params
  * Return: 0
@@ -9,26 +9,22 @@
 
 int wildcmp(char *s1, char *s2)
 {
-	int i;
-	char j;
-
-	i = 1;
-	j = '0';
-
-	if (s1 == s2)
-	{
-		j = *s1;
-
-		if (j == '0')
+        if (*s1 == '\0')
+        {
+                if (*s2 != '\0' && *s2 == '*')
 		{
-			s1 = s2;
+                        return (wildcmp(s1, s2 + 1));
 		}
-		i++;
-	}
+                return (*s2 == '\0');
+        }
 
-	else
+        if (*s2 == '*')
 	{
-		s1 = s2 + 2;
+                return (wildcmp(s1 + 1, s2) || wildcmp(s1, s2 + 1));
 	}
-	return (0);
+        else if (*s1 == *s2)
+	{
+                return (wildcmp(s1 + 1, s2 + 1));
+	}
+        return (0);
 }
