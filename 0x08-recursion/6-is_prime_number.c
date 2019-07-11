@@ -3,37 +3,41 @@
 int tmp_prime(int n, int i);
 
 /**
- * is_prime_number - number is prime?
+ * divisors - number is prime?
  * @n: integer params
  * Return: boolean
  */
 
-int is_prime_number(int n)
+int divisors(int n, int m)
 {
-	if (n <= 1)
+	if (m % n == 0)
 	{
 		return (0);
 	}
-	return (actual_prime(n, n - 1));
-}
-
-/**
- * tmp_prime - actual prime
- * @n: integer params
- * @i: integer params
- * Return: recursion
- */
-
-int tmp_prime(int n, int i)
-{
-	if (i == 1)
+	else if (m / 2 > n)
+	{
+		return (check_divisors(d + 2, m));
+	}
+	else
 	{
 		return (1);
 	}
+}
 
-	if (n % i == 0 && i > 0)
+/**
+ * is_prime_number - prime
+ * @n: integer params
+ * Return: recursion
+ */
+
+int is_prime_number(int n)
+{
+	if ((!(n % 2) && n != 2) || n < 2)
 	{
 		return (0);
 	}
-	return (actual_prime(n, i - 1));
+	else
+	{
+		return (check_divisors(3, n));
+	}
 }
