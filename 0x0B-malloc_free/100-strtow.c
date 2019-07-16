@@ -14,14 +14,11 @@ char **strtow(char *str)
 
 	if (!str || !*str)
 		return (NULL);
-
 	while (*(str + i))
 	{
 		if (*(str + i) != ' ')
-		{
 			if (*(str + i + 1) == ' ' || *(str + i + 1) == 0)
 				count += 1;
-		}
 		i++;
 	}
 	if (count == 0)
@@ -45,14 +42,12 @@ char **strtow(char *str)
 		len += 1;
 		col = malloc(sizeof(char) * len);
 		if (!col)
-		{
 			for (k = j - 1; k >= 0; k--)
 			{
 				free(f[k]);
 			}
 			free(f);
 			return (NULL);
-		}
 		for (k = 0; k < (len - 1);  k++)
 		{
 			*(col + k) = *(str++);
