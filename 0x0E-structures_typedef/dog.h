@@ -8,7 +8,7 @@
  * @owner: atribute pointer to char owner's dog
  */
 
-struct dog
+struct dog_t
 {
 	char *name;
 	float age;
