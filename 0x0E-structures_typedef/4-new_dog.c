@@ -1,11 +1,13 @@
 #include "dog.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * new dog - new dog
+ * new_dog - new dog
  * @name: name's dog
  * @age: age's dog
  * @owner: owner's dog
- * Return: No
+ * Return: newdog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -45,5 +47,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (k = 0; k <= j; k++)
 		doge->owner[k] = owner[k];
 	return (doge);
-}
+	}
 }
