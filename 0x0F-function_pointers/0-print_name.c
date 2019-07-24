@@ -1,4 +1,4 @@
-#include "f_pointrs.h"
+#include "function_pointers.h"
 
 /**
  * print_name - prints a name
