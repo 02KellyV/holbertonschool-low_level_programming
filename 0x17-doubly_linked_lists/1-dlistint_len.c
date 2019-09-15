@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_len - number of elements for a list.
+ * dlistint_len - number of elements for a list.
  * @h: a node pointer type dlistint_t
  * Return: a size_t number.
  */
