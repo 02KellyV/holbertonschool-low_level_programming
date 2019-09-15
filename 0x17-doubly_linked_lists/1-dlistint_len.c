@@ -3,7 +3,7 @@
 /**
  * dlistint_len - number of elements for a list.
  * @h: a node pointer type dlistint_t
- * Return: a size_t number.
+ * Return: number of nodes
  */
 
 size_t dlistint_len(const dlistint_t *h)
