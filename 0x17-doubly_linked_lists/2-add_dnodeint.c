@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * dlistint_len - adds node starting doubly linked list
+ * *add_dnodeint - adds node starting doubly linked list
  * @head: a node double pointer type dlistint_t
  * @n: info new node
  * Return: address new node or NULL
