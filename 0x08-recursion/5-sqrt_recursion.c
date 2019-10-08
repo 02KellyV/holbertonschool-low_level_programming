@@ -6,32 +6,23 @@
  * @i: integer parameter
  * Return: sqrt
  */
-
-int _sqrt(int n, int i)
+int sqrt(int n, int i)
 {
-	if (i * i > n)
-	{
+	if (n < 0)
 		return (-1);
-	}
-
+	if ((i * i) > n)
+		return (-1);
 	if (i * i == n)
-	{
 		return (i);
-	}
-	return (_sqrt(n, i + 1));
+	return (sqrt(n, i + 1));
 }
 
 /**
- * _sqrt_recursion - natural square root
- * @n: integer parameter
- * Return: recursion
+ * _sqrt_recursion - main funct
+ * @n: int n
+ * Return: int
  */
-
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		return (-1);
-	}
-	return (_sqrt(n, 1));
+        return (recursive_root(n, 1));
 }
