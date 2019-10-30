@@ -21,11 +21,13 @@ void swap(int *ip, int *jp)
 void bubble_sort(int *array, size_t size)
 {
 	int i, j;
-	int ni = size - 1;
+	int nj = 0, ni = (size - 1);
 
 	for (i = 0; i < ni; i++)
 	{
-		for (j = 0; j < ni; j++)
+		nj = (size - i - 1);
+
+		for (j = 0; j < nj; j++)
 		{
 			if (array[j] > array[j + 1])
 			{
@@ -71,4 +73,3 @@ void print_array(const int *array, size_t size)
  *	return (0);
  * }
  */
-
