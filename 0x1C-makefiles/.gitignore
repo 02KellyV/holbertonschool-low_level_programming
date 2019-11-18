@@ -2,3 +2,6 @@ main.c
 holberton.c
 m.h
 holberton
+holberton.o
+main.o 
+
