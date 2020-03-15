@@ -2,32 +2,29 @@
 #include <stdarg.h>
 
 /**
-* print_strings - prints strings, followed by a new line.
-* @separator: delimiter
-* @n: n args
-* Return: void
-*/
+ * print_strings - prints strings, followed by a new line
+ * @separator: delimiter
+ * @n: n args
+ * Return: void
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list list1, list2;
+	va_list list1;
 	unsigned int i;
+	char *clone;
 
 	va_start(list1, n);
-	if (separator && n)
+
+	for (i = 0; i < n; i++)
 	{
-		for (i = 0; (i < n - 1); i++)
-		{
-			va_copy(list2, list1);
-			if (va_arg(list2, const char*))
-				printf("%s%s", va_arg(list1, char*), separator);
-			else
-				printf("%p%s", va_arg(list1, char*), separator);
-			if (va_arg(list2, int))
-				printf("%s\n", va_arg(list1, char*));
-			else
-				printf("%p\n", va_arg(list1, char*));
-		}
+		clone = va_arg(list1, char*);
+		if (clone != NULL)
+			printf("%s", clone);
+		else
+			printf("%p", clone);
+		if (separator != NULL && i < n - 1)
+			printf("%s", separator);
 	}
-	va_end(list2);
+	printf("\n");
 	va_end(list1);
 }
