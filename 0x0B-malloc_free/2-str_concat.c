@@ -33,14 +33,14 @@ char *str_concat(char *s1, char *s2)
 	if (!s1)
 		s1 = "";
 	else
-		Ls1 = _strlen(s1);
+		l1 = _strlen(s1);
 
 	if (!s2)
 		s2 = "";
 	else
-		Ls2 = _strlen(s2);
+		l2 = _strlen(s2);
 
-	conc = malloc(Ls1 + Ls2 + 1);
+	conc = malloc(l1 + l2 + 1);
 	if (!conc)
 		return (0);
 
